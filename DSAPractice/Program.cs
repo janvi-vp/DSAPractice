@@ -52,7 +52,16 @@ using DSAPractice.Leetcode;
 // string res6 = p5.SimplifyPath(path);
 // Console.WriteLine(res6);
 
-int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-Problem6 p6 = new();
+// int[][] matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// Problem6 p6 = new();
 
-p6.Rotate(matrix);
+// p6.Rotate(matrix);
+
+int[][] intervals = [[1, 3], [2, 6], [8, 10], [15, 18]];
+Problem7 p7 = new();
+
+var res8 = p7.Merge(intervals);
+foreach (var interval in res8)
+{
+    Console.WriteLine($"[{interval[0]}, {interval[1]}]");
+}

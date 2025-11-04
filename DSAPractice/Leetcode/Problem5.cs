@@ -11,8 +11,6 @@ namespace DSAPractice.Leetcode
 
             string[] components = path.Split('/');
             Stack<string> stack = new Stack<string>();
-
-            Console.WriteLine(string.Join(",", components));
             
             foreach (string component in components)
             {
