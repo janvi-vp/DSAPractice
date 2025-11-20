@@ -57,11 +57,31 @@ using DSAPractice.Leetcode;
 
 // p6.Rotate(matrix);
 
-int[][] intervals = [[1, 3], [2, 6], [8, 10], [15, 18]];
-Problem7 p7 = new();
+// int[][] intervals = [[1, 3], [2, 6], [8, 10], [15, 18]];
+// Problem7 p7 = new();
 
-var res8 = p7.Merge(intervals);
-foreach (var interval in res8)
-{
-    Console.WriteLine($"[{interval[0]}, {interval[1]}]");
-}
+// var res8 = p7.Merge(intervals);
+// foreach (var interval in res8)
+// {
+//     Console.WriteLine($"[{interval[0]}, {interval[1]}]");
+// }
+
+// char[][] boxGrid = [['#', '.', '#']];
+// Problem8 p8 = new();
+
+// var res9 = p8.RotateTheBox(boxGrid);
+// foreach (var row in res9)
+// {
+//     Console.WriteLine("[" + string.Join(",", row.Select(c => "'" + c + "'")) + "]");
+// }
+
+LRUCache lRUCache = new LRUCache(2);
+lRUCache.Put(1, 1); 
+lRUCache.Put(2, 2);
+Console.WriteLine(lRUCache.Get(1));
+lRUCache.Put(3, 3);
+Console.WriteLine(lRUCache.Get(2));
+lRUCache.Put(4, 4);
+Console.WriteLine(lRUCache.Get(1));
+Console.WriteLine(lRUCache.Get(3));
+Console.WriteLine(lRUCache.Get(4));
